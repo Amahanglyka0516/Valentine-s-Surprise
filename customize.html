@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customize - Tolly’s Photobooth</title>
+  <link rel="stylesheet" href="../css/customize.css" />
+  <link rel="icon" href="../images/finallogo_nobg.png" />
+</head>
+<body>
+  <div class="page-container">
+    <div class="left-panel">
+      <a href="../html/home.html">
+      <img src="../images/finallogo_nobg.png" class="main-logo" alt="Tolly's Photobooth Logo"></a>
+      <h1>Customize your layout</h1>
+      
+      <div class="template-scroll">
+        <img src="../images/fframe1.png" class="template-option active" data-frame="../images/fframe1.png" alt="black">
+        <img src="../images/fframe2.png" class="template-option" data-frame="../images/fframe2.png" alt="leopard">
+        <img src="../images/fframe3.png" class="template-option" data-frame="../images/fframe3.png" alt="pink">
+        <img src="../images/fframe4.png" class="template-option" data-frame="../images/fframe4.png" alt="vday">
+        <img src="../images/fframe5.png" class="template-option" data-frame="../images/fframe5.png" alt="f1">
+      </div>
+
+      <div class="filters-container">
+        <h2>Filters</h2>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="none">Normal</button>
+          <button class="filter-btn" data-filter="sepia(0.6) brightness(1.1)">Vintage</button>
+          <button class="filter-btn" data-filter="grayscale(100%)">B & W</button>
+          <button class="filter-btn" data-filter="blur(0.5px) brightness(1.2) contrast(0.9)">Soft</button>
+          <button class="filter-btn" data-filter="grayscale(100%) contrast(1.2) sepia(0.3) brightness(0.9)">Old</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="preview-area" id="preview-area">
+        <div class="photo-stack">
+          <img id="slot1" class="photo-slot" alt="Photo 1">
+          <img id="slot2" class="photo-slot" alt="Photo 2">
+          <img id="slot3" class="photo-slot" alt="Photo 3">
+        </div>
+        <img id="layout-frame" class="layout-frame" src="../images/frame1.png" alt="Frame Overlay">
+      </div>
+
+      <div class="controls">
+        <button id="retake-btn">Retake</button>
+        <button id="download-btn">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="../js/customize.js"></script>
+</body>
+</html>

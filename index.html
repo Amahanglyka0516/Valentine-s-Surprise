@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my Tollytot</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../images/heart.png">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <div class="paper-texture"></div>
+
+    <div class="main-wrapper">
+        <div id="envelope-page" class="page active">
+            <div class="hearts-container" id="hearts-bg"></div>
+            
+            <h1 class="header-text">
+                <span class="word">Happy</span> 
+                <span class="word">Valentine's</span> 
+                <span class="word">Day!</span>
+            </h1>
+            
+            <p class="instruction" id="hint-text">click the envelope to open</p>
+            
+            <div class="envelope-container" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter-card" id="main-card">
+                    <div class="card-front">
+                        <p class="to-love">To the soul my heart knows best,</p>
+                        <h2 class="script-name">Hezekiah</h2>
+                        <div class="photo-frame">
+                            <img src="../images/tolly.jpg" alt="Special Memory">
+                        </div>
+                        <p class="click-more">click the card</p>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">Made just for you by one who shall forever remain yours — Gloxtato</p>
+        </div>
+
+        <div id="letter-page" class="page">
+            <div class="full-letter-paper">
+                <h2 class="script-header shimmer">My Dearest Hezekiah,</h2>
+                <div class="letter-body">
+                    <p>I just wanted to take a moment to tell you how much you mean to me. Being around you makes everything feel lighter, and every conversation, laugh, and quiet moment we share is something I truly treasure.</p>
+                </div>
+                <button class="action-btn" onclick="showValentinePage()">continue</button>
+            </div>
+        </div>
+
+        <div id="valentine-page" class="page">
+            <div class="floral-overlay"></div>
+            <div class="question-box">
+                <div class="heart-bg">❤</div>
+                <p class="sub-ask">WILL YOU BE MY</p>
+                <h1 class="main-ask">Valentine?</h1>
+                <div class="btn-row">
+                    <button class="choice-btn yes" onclick="celebrate()">YES</button>
+                    <button class="choice-btn no" id="noBtn">NO</button>
+                </div>
+                <p id="email-hint" class="special-footer">check your email for something special</p>
+            </div>
+        </div>
+    </div>
+
+        <div id="next-page-trigger" class="floating-text-btn" onclick="goToStartPage()">
+        I made this especially for you →
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

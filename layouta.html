@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Booth - Layout A</title>
+  <link rel="stylesheet" href="../css/layouta.css">
+  <link rel="icon" href="../images/finallogo_nobg.png">
+</head>
+<body>
+  <div class="container">
+    <!-- Left side - photo previews -->
+    <div class="photo-list">
+      <div class="photo-frame" id="photo1"></div>
+      <div class="photo-frame" id="photo2"></div>
+      <div class="photo-frame" id="photo3"></div>
+    </div>
+
+    <!-- Right side - camera -->
+    <div class="camera-section">
+      <a href="../html/home.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
+
+      <div class="camera-wrapper">
+        <img src="../images/cameraframef.png" class="camera-frame" alt="camera frame">
+        <video id="camera" autoplay playsinline></video>
+
+        <button id="capture-btn">
+          <img src="../images/camerabutton.png" alt="camera button">
+        </button>
+
+        <div id="countdown" class="countdown"></div>
+      </div>
+
+      <div class="controls">
+        <button id="retake-btn">Retake</button>
+        <a href="../html/customize.html"><button id="preview-btn">Preview</button></a>
+      </div>
+    </div>
+  </div>
+
+  <audio id="shutter-sound" src="../audio/camera-shutter.mp3" preload="auto"></audio>
+
+  <script src="../js/layouta.js"></script>
+</body>
+</html>
